@@ -20,7 +20,7 @@ HTML = """
   </style>
 </head>
 <body>
-  <h1>🩵 Sentiment Analyzer</h1>
+  <h1> Sentiment Analyzer</h1>
   <p>Enter multiple sentences below (each on a new line):</p>
   <form method="POST">
     <textarea name="text" placeholder="Type here..."></textarea><br>
@@ -33,8 +33,8 @@ HTML = """
     <p class="{{r[1]|lower}}">{{r[0]}} → {{r[1]}} (score = {{r[2]}})</p>
   {% endfor %}
   <div class="summary">
-    <p style="color:blue;">Most positive: {{best}}</p>
-    <p style="color:purple;">Most negative: {{worst}}</p>
+    <p style="color:green;">Most positive: {{best}}</p>
+    <p style="color:red;">Most negative: {{worst}}</p>
   </div>
   {% endif %}
 </body>
